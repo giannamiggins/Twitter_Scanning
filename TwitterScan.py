@@ -54,7 +54,7 @@ class Search():
                             errors += 1
             print(counter , 'out of' , tweets , 'were flagged as alarming language')
             ratio = counter / tweets
-            print(ratio)
+            print('= ', ratio*100, '%')
             if ratio > 0.1:
                 print('This account has been labeled as At-Risk')
             print(errors, 'tweets were unable to be scanned')
